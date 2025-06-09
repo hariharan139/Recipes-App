@@ -7,16 +7,23 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
   "start": "node index.js",
   "dev": "nodemon index.js"
 },
 
+=======
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+>>>>>>> 5920839 (fixed mongodb issues and package.json)
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.17.0",
     "mongoose": "^8.15.1",
     "multer": "^2.0.1"
   },

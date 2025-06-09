@@ -21,7 +21,7 @@ export default function RecipeItems() {
 
   const onDelete = async (id) => {
     await axios
-      .delete(`http://localhost:5000/recipe/${id}`)
+      .delete(`https://recipes-blog-z7by.onrender.com/recipe/${id}`)
       .then((res) => console.log(res));
     setAllRecipes((recipes) => recipes.filter((recipe) => recipe._id !== id));
     let filterItem = favItems.filter((recipe) => recipe._id !== id);
@@ -49,7 +49,7 @@ export default function RecipeItems() {
               onDoubleClick={() => navigate(`/recipe/${item._id}`)}
             >
               <img
-                src={`http://localhost:5000/images/${item.coverImage}`}
+                src={`https://recipes-blog-z7by.onrender.com/images/${item.coverImage}`}
                 width="120px"
                 height="100px"
               ></img>
